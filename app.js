@@ -9,11 +9,11 @@ app.use('/public', express.static('public', {
 
 app.get('/', (req, res) => res.send('Hello World!'))
 
-app.listen(3000, () => console.log('Example app listening on port 3000!'))
+app.listen(12306, () => console.log('Example app listening on port 12306!'))
 
 function setCustomCacheControl (res, path) {
   if (serveStatic.mime.lookup(path) === 'text/html') {
     // Custom Cache-Control for HTML files
-    res.setHeader('Cache-Control', 'public, max-age=1000')
+    res.setHeader('Cache-Control', 'public, max-age=0')
   }
 }
