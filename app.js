@@ -10,6 +10,15 @@ app.use(
   })
 );
 
+app.use(
+  "/lastModified",
+  express.static("public/lastModified", {
+    lastModified: true,
+    setHeaders: setCustomCacheControl
+  })
+);
+
+
 // app.get("/expires/img", function(req, res, next) {
 //   console.log("------------------------------------");
 //   console.log(req.url);

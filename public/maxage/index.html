@@ -6,24 +6,27 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>缓存策略 - max-age</title>
   <link rel="stylesheet" type="text/css" media="screen" href="../main.css" />
-  <script src="main.js"></script>
 </head>
 
 <body>
   <div class="container">
-    <div class="menus">
-      <a href="./" class="menu active">max-age</a>
-      <a href="/expires" class="menu">Expires</a>
-    </div>
+      <div class="menus">
+        <a href="/maxage" class="menu active">max-age</a>
+        <a href="/expires" class="menu">Expires</a>
+        <a href="/lastModified" class="menu">Last Modified / If-Modified-Since</a>
+        <a href="/etag" class="menu">ETag / If-Match</a>
+        </div>
+
     <div class="content">
       <h4>通过max-age设置最大缓存时间</h4>
-      <img src="./avatar.jpeg" width="100" height="100" />
+      <img src="./avatar.jpg" width="100" height="100" />
       <div>My name is
         <span id="name"></span>
       </div>
     </div>
   </div>
-
+  
+  <script src="main.js"></script>
 
 </body>
 

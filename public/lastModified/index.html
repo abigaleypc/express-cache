@@ -13,15 +13,14 @@
   <div class="container">
     <div class="menus">
       <a href="/maxage" class="menu">max-age</a>
-      <a href="/expires" class="menu active">Expires</a>
-      <a href="/lastModified" class="menu">Last Modified / If-Modified-Since</a>
+      <a href="/expires" class="menu">Expires</a>
+      <a href="/lastModified" class="menu active">Last Modified / If-Modified-Since</a>
       <a href="/etag" class="menu">ETag / If-Match</a>
     </div>
     <div class="content">
-      <h4>通过Expires设置有效时间</h4>
-      <img src="./avatar.jpeg" width="100" height="100" />
-      <div>My name is
-        <span id="name"></span>
+      <h4>通过last-Modified验证最后修改时间</h4> 
+      <div>最后修改时间为  
+        <span id="time"></span>
       </div>
     </div>
   </div>

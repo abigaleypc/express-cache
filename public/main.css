@@ -3,6 +3,7 @@ body {
 }
 
 .container {
+    position: relative;
     width: 80%;
     height: 400px;
     margin: 0 auto;
@@ -14,8 +15,8 @@ body {
     
 }
 .menus {
-    width: 12%;
-    float: left;
+    position: absolute;
+    width: 200px;
     border-right: 1px solid #222;
     height: 400px;
 }
@@ -35,7 +36,8 @@ body {
 }
 
 .content {
+    position: absolute;
+    left: 200px;
     width: 80%;
-    float: left;
-    padding: 0 15px;
+    padding: 0 25px;
 }
